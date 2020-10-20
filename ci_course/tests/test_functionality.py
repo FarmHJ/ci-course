@@ -11,6 +11,7 @@ class TestFunctionality(unittest.TestCase):
 
     def test_minimum(self):
         self.assertEqual(ci_course.minimum(1, 2, 3), 1)
+        self.assertEqual(ci_course.minimum('hello'), None)
         self.assertEqual(ci_course.minimum(1.2, 2.3), 1.2)
         self.assertEqual(ci_course.minimum(-1.2, -3), -3)
 
